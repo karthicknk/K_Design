@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/edittext_lr"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Edittext_LR" />
+        <item
+            android:id="@+id/splash_screen"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Splash Screen" />
+        <item
+            android:id="@+id/buttons"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Buttons" />
+        <item
+            android:id="@+id/date_and_time"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Date and Time" />
+        <item
+            android:id="@+id/expandable_view"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="Expandable" />
+        <item
+            android:id="@+id/collapsingToolbarss"
+            android:icon="@drawable/ic_launcher_background"
+            android:title="CollapsingToolbar" />
+    </group>
+
+</menu>

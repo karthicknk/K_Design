@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frame_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="0dp">
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.appbar.AppBarLayout
+                            android:id="@+id/materialup.appbar"
+                            android:layout_width="match_parent"
+                            android:background="@color/white"
+                            android:layout_height="wrap_content">
+
+
+                            <com.google.android.material.appbar.CollapsingToolbarLayout
+                                android:id="@+id/ioexample.collapsing"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                app:contentScrim="@color/colorWhite"
+                                app:expandedTitleMarginEnd="64dp"
+                                app:expandedTitleMarginStart="48dp"
+                                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="90dp"
+                                    app:layout_anchorGravity="center|center_horizontal">
+
+                                    <com.google.android.material.tabs.TabLayout
+                                        android:id="@+id/college_tabs"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="40dp"
+                                        android:layout_marginLeft="4dp"
+                                        app:tabIndicatorColor="@color/redColor"
+                                        app:tabIndicatorFullWidth="false"
+                                        app:tabIndicatorHeight="2dp"
+                                        app:tabMinWidth="0dp"
+                                        app:tabMode="scrollable"
+                                        app:tabPadding="0dp"
+                                        app:tabSelectedTextColor="@color/redColor"
+                                        app:tabTextAppearance="@style/MyCustomTabText"
+                                        app:tabTextColor="@color/colorBlack" />
+
+                                </RelativeLayout>
+
+                                <androidx.appcompat.widget.Toolbar
+                                    android:id="@+id/flexible.example.toolbar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="-8dp"
+                                    android:layout_marginBottom="6dp"
+                                    android:gravity="left"
+                                    app:layout_anchorGravity="top"
+                                    app:layout_collapseMode="pin"
+                                    tools:ignore="MissingConstraints">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:orientation="vertical">
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="2dp"
+                                            android:gravity="center"
+                                            android:orientation="horizontal"
+                                            android:paddingTop="8dp"
+                                            android:paddingRight="8dp">
+
+                                            <RelativeLayout
+                                                android:id="@+id/locationRelation"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content">
+
+                                                <ImageView
+                                                    android:id="@+id/dotImg"
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:layout_below="@+id/mapIV"
+                                                    android:layout_marginTop="-4dp"
+                                                    android:layerType="software"
+
+                                                    android:src="@drawable/dot_dot_layout_gray_ver" />
+
+                                                <ImageView
+                                                    android:id="@+id/mapIV"
+                                                    android:layout_width="20dp"
+                                                    android:layout_height="20dp"
+                                                    android:src="@drawable/map_pin"></ImageView>
+
+                                                <TextView
+                                                    android:id="@+id/addressTextView"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginLeft="6dp"
+                                                    android:layout_marginRight="48dp"
+                                                    android:layout_toRightOf="@+id/mapIV"
+                                                    android:layout_weight="1"
+                                                    android:singleLine="true"
+                                                    android:text="@string/app_name"
+                                                    android:textColor="@color/colorBlack"
+                                                    android:textSize="16dp"></TextView>
+
+
+                                            </RelativeLayout>
+
+                                            <LinearLayout
+                                                android:id="@+id/searchLR"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/locationRelation"
+                                                android:orientation="horizontal">
+
+                                                <LinearLayout
+                                                    android:id="@+id/searchLL"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40dp"
+                                                    android:layout_marginLeft="2dp"
+                                                    android:layout_marginTop="2dp"
+                                                    android:layout_marginRight="2dp"
+                                                    android:layout_marginBottom="12dp"
+                                                    android:layout_weight="1"
+                                                    android:background="@drawable/home_radius_search_black"
+                                                    android:gravity="center"
+                                                    android:orientation="horizontal"
+                                                    android:padding="8dp">
+
+                                                    <ImageView
+                                                        android:id="@+id/searchImageView"
+                                                        android:layout_width="16dp"
+                                                        android:layout_height="20dp"
+                                                        android:src="@drawable/search"></ImageView>
+
+                                                    <TextView
+                                                        android:id="@+id/searchEditText"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginLeft="12dp"
+                                                        android:layout_weight="1"
+                                                        android:background="#00000000"
+                                                        android:singleLine="true"
+                                                        android:text="@string/app_name"
+                                                        android:textColor="@color/colorGray"
+                                                        android:textSize="16dp"></TextView>
+
+                                                </LinearLayout>
+
+                                                <ImageView
+                                                    android:id="@+id/qrCodeIV"
+                                                    android:layout_width="48dp"
+                                                    android:layout_height="48dp"
+                                                    android:contentDescription="Qr Code"
+                                                    android:padding="10dp"
+                                                    android:src="@drawable/qr_code_scan"></ImageView>
+                                            </LinearLayout>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_below="@+id/searchLR"
+                                                android:orientation="vertical">
+
+                                                <TextView
+                                                    android:id="@+id/dumy"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="40dp"
+                                                    android:visibility="gone"></TextView>
+
+                                            </LinearLayout>
+
+                                        </RelativeLayout>
+
+
+                                    </LinearLayout>
+                                </androidx.appcompat.widget.Toolbar>
+
+                            </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+                            <androidx.appcompat.widget.Toolbar
+                                android:id="@+id/flexible.example.toolbar1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="-5dp"
+                                android:layout_marginTop="-20dp"
+                                android:gravity="left"
+                                app:layout_collapseMode="pin"
+                                tools:ignore="MissingConstraints">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:text="@string/app_name"
+                                    android:textSize="20sp" />
+
+                            </androidx.appcompat.widget.Toolbar>
+
+                        </com.google.android.material.appbar.AppBarLayout>
+
+                        <com.k_design.example.CustomViewPager
+                            android:id="@+id/college_viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                            app:layout_constraintTop_toBottomOf="@+id/tabs" />
+                        <!-- <androidx.recyclerview.widget.RecyclerView
+                             android:id="@+id/allRecyclerView"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             android:paddingTop="6dp"
+                             android:orientation="vertical"/>-->
+
+
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        android:clipToPadding="true"
+        android:visibility="gone">
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

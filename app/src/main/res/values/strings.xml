@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">K_Design</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="MODEL">list</string>
+    <string name="position">position</string>
+    <string name="my_story">A collapsing toolbar layout widget can be used along with a basic toolbar widget to create a more sophisticated version of the regular toolbar</string>
+</resources>
