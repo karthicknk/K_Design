@@ -1,6 +1,7 @@
 package com.k_design.example
 
 import android.os.Bundle
+import android.util.Log
 import android.view.MenuItem
 import android.view.animation.Animation
 import android.widget.ImageView
@@ -14,6 +15,7 @@ import com.k_design.example.fragment.*
 
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener{
 
+    companion object{const val TAG = "MainActivity"}
     lateinit var toolbar: Toolbar
     lateinit var navView: NavigationView
     lateinit var drawer: DrawerLayout
@@ -53,7 +55,7 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
     }
 
     fun abc(){
-
+        Log.e(TAG, "abc: " )
     }
 
     private fun setToolbar() {
