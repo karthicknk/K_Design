@@ -15,7 +15,7 @@ import com.k_design.example.fragment.*
 
 class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelectedListener{
 
-    companion object{const val TAG = "MainActivity111"}
+    companion object{const val TAG = "MainActivity"}
     lateinit var toolbar: Toolbar
     lateinit var navView: NavigationView
     lateinit var drawer: DrawerLayout
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
     }
 
     fun abc(){
-        Log.e(TAG, "abc: " )
+//        Log.e(TAG, "abc: " )
     }
 
     private fun setToolbar() {
