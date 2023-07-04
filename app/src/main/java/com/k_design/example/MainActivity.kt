@@ -52,6 +52,10 @@ class MainActivity : AppCompatActivity() , NavigationView.OnNavigationItemSelect
         navView.setCheckedItem(R.id.edittext_lr)
     }
 
+    fun abc(){
+
+    }
+
     private fun setToolbar() {
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Edittext_LR"
